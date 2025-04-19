@@ -1,0 +1,32 @@
+# LaTeX build files
+*.aux
+*.bbl
+*.blg
+*.idx
+*.ind
+*.ilg
+*.toc
+*.lot
+*.lof
+*.acn
+*.acr
+*.alg
+*.glg
+*.glo
+*.gls
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Build directories (if you use one)
+build/
+output/
+
+# Generated PDF files (if you don't want to track them)
+*.pdf
+!*.last.pdf
+
+# Backup and temporary files
+*~
+*.bak
+*.tmp
