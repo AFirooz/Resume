@@ -1,0 +1,138 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Original work: Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+% This is a modified version of the original template.
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size 'a4paper' by default, use 'letterpaper' for US letter
+\documentclass[11pt, letterpaper]{awesome-cv}  % Do not change the font size here
+\def\addfont{0pt}  % Add / Reduce font size from here
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.5cm, footskip=0.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-darknight}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% red: e61212
+% \definecolor{awesome}{HTML}{414141} % CA63A8
+\definecolor{darktext}{HTML}{414141}  % 414141
+\definecolor{text}{HTML}{414141}  % 333333
+% \definecolor{graytext}{HTML}{1a1a1a}  % 5D5D5D
+% \definecolor{lighttext}{HTML}{999999}  % 999999
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{false}  % true or false
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[rectangle,edge,right]{./examples/profile}
+\name{Ali}{Firooz}
+\legalname{Seyed Ali Firooz Abadi}
+\position{Computer Science, PhD{\enskip\cdotp\enskip}
+Chemical Engineer, MS}
+\address{State College, PA 16801}
+\mobile{+1 (803) 662-6908}
+% \email{Ali.Firooz@sc.edu}
+\gmail{Ali.emad649@gmail.com}
+%\homepage{www.posquit0.com}
+\github {AFirooz}
+% \googlescholar{m5BMVpgAAAAJ}{tinyurl.com/scholar-g}
+\linkedin {Ali-Firooz}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+\extrainfo{\textbf{Permanent Resident}}
+
+
+% \Centering
+
+%\quote{Fun fact: I changed schools 6 times across 3 countries and languages due to my family circumstances}
+
+%\quote{“The math of time is simple:
+%\newline You have less than you think and need more than you know.”}
+
+% \quote{“The important thing is not to stop questioning.”
+% \newline “It is enough if one tries merely to comprehend a little of this mystery every day.”
+% \newline By Albert Einstein, 1955}
+
+% \quote{“If opportunity does not knock, build a door.”
+% \newline By Milton Berle}
+
+%-------------------------------------------------------------------------------
+\usepackage{zref-totpages}
+\begin{document}
+
+\newcommand{\SubItemN}[1]{{\setlength\itemindent{15pt} \item[-] #1}}
+\newcommand{\SubItem}[1]{{\setlength\itemindent{0pt} \item[] #1}}
+\newcommand{\mycomment}[1]{}
+
+% Print the header with above personal information
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[C]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+%\mycomment{
+
+\makecvfooter
+  { } % {\today}
+  {Ali Firooz~~~-~~~Resume}
+  {page: \thepage\ / \ztotpages}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%-------------------------------------------------------------------------------
+\RaggedRight
+\vspace*{-0.3cm}
+\input{resume/summary.tex}
+\input{resume/skills.tex}
+\vspace*{-0.2cm}
+% Work Experience
+\input{resume/experience.tex}
+\input{resume/education.tex} \vspace{-0.6cm}
+% Class projects, personal projects
+% \input{resume/projects.tex} \vspace{-0.1cm}
+\input{resume/honors.tex} \vspace{-0.1cm}
+\input{resume/certificates.tex}
+\input{resume/publications.tex}
+
+% Conference Presentations
+% \input{resume/presentation.tex}
+
+%\Centering
+\input{resume/leadership volunteer}
+% \input{resume/writing.tex}
+% \input{resume/committees.tex}
+
+%-------------------------------------------------------------------------------
+\end{document}
