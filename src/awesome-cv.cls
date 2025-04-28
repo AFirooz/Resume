@@ -1,4 +1,4 @@
-%% Start of file 'awesome-cv.cls'.
+%% Start of file `awesome-cv.cls'.
 % Awesome CV Class File
 %
 % This class has been downloaded from:
@@ -377,8 +377,12 @@
 }
 
 % Defines writer's extra informations (optional)
-% Usage: \extrainfo{<extra informations>}
-\newcommand*{\extrainfo}[1]{\def\@extrainfo{#1}}
+% Usage: \gc{<extra informations>}
+\newcommand*{\gc}[1]{\def\@gc{#1}}
+
+% Defines writer's extra informations (optional)
+% Usage: \relocate{<extra informations>}
+\newcommand*{\relocate}[1]{\def\@relocate{#1}}
 
 % Defines a legeal name (optional)
 % Usage: \legalname{<legal name>}
@@ -584,11 +588,17 @@
           \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
           \href{https://scholar.google.com/citations?user=\@googlescholarid}{\faGraduationCap\acvHeaderIconSep\@googlescholarname}%
         }%
-      \ifthenelse{\isundefined{\@extrainfo}}%
+      \ifthenelse{\isundefined{\@gc}}%
         {}%
         {%
           \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
-          \@extrainfo%
+          \faCheckSquareO\acvHeaderIconSep\@gc%
+        }%
+      \ifthenelse{\isundefined{\@relocate}}%
+        {}%
+        {%
+          \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
+          \faHome\acvHeaderIconSep\@relocate%
         }%
     } \\[\acvHeaderAfterSocialSkip]%
     \ifthenelse{\isundefined{\@quote}}%
