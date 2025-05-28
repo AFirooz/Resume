@@ -49,24 +49,28 @@
 %	PERSONAL INFORMATION
 %	Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
+% Define the content configuration argument
+% Options: mscs, mschem, phd
+\def\solution{phd}
+
 % Available options: circle|rectangle,edge/noedge,left/right
 % \photo[rectangle,edge,right]{./examples/profile}
+
 \name{Ali}{Firooz}
 \legalname{Seyed Ali Firooz Abadi}
-\position{Computer Science, PhD{\enskip\cdotp\enskip}
-Chemical Engineer, MS}
+\input{resume/personal_info.tex}
 \address{State College, PA 16801}
 \mobile{+1 (803) 662-6908}
 % \email{Ali.Firooz@sc.edu}
 \gmail{Ali.emad649@gmail.com}
-%\homepage{www.posquit0.com}
+%\homepage{afirooz.github.io}
 \github {AFirooz}
 % \googlescholar{m5BMVpgAAAAJ}{tinyurl.com/scholar-g}
 \linkedin {Ali-Firooz}
 % \gitlab{gitlab-id}
 % \stackoverflow{SO-id}{SO-name}
 % \twitter{@twit}
-% \skype{skype-id}
+% \skype{skype-id}  % discontinued
 % \reddit{reddit-id}
 % \medium{madium-id}
 \gc{\textbf{Permanent Resident}}
@@ -108,11 +112,11 @@ Chemical Engineer, MS}
   {Ali Firooz~~~-~~~Resume}
   {page: \thepage\ / \ztotpages}
 
-
 %-------------------------------------------------------------------------------
 %	CV/RESUME CONTENT
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
+
 \RaggedRight
 \vspace*{-0.3cm}
 \input{resume/summary.tex}
@@ -120,7 +124,7 @@ Chemical Engineer, MS}
 \vspace*{-0.2cm}
 % Work Experience
 \input{resume/experience.tex}
-% Class projects, personal projects
+% Self-initiated or academic efforts. Things you built or contributed to voluntarily, during school, in your spare time, or as part of a course.
 \input{resume/projects.tex} \vspace{-0.1cm}
 \input{resume/leadership volunteer}
 \input{resume/education.tex} \vspace{-0.6cm}
