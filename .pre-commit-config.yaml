@@ -1,0 +1,10 @@
+repos:
+  - repo: local
+    hooks:
+      - id: restore-pdf-files
+        name: Restore auto-generated PDF files
+        entry: src/.pre-commit/restore-pdf-files.sh
+        language: system
+        files: '\.pdf$'
+        pass_filenames: true  # pass staged filenames to the script
+        always_run: false  # Only run if there are staged PDF files
