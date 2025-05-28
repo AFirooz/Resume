@@ -14,8 +14,8 @@
     \cventry
         {Graduate Research Assistant} % Job title
         {University of South Carolina} % Organization
-        {Jan 22 - Present}
-        {Columbia, SC, US} % Location
+        {Jan 22 - Dec 24}
+        {SC, US} % Location
         {
             \begin{cvitemsfree} % Description(s) of tasks/responsibilities
                 \item{Managed high-throughput liquid chromatography-mass spectrometry (LCMS) data (\textbf{over 6.9 billion data points} across 78 files), storing it into a MySQL database by leveraging the advantages of SQLAlchemy's asyncio methods to expedite the process. Explored neural networks like ResNet and CNN to differentiate between cancerous and surrounding tissues based on the processed data}
@@ -37,34 +37,11 @@
                 \item{Conducted sentiment analysis on TripAdvisor reviews dataset using Hugging Face ALBERT model, including text tokenization, and fine-tuning.}
             \end{cvitemsfree}
         }
-    %---------------------------------------------------------
-    \cventry
-        {Graduate Research Assistant (Chemical Eng)} % Job title
-        {Chemistry and Chemical Engineering Research Center of Iran} % Organization
-        {Jan 16 - May 20} % Date(s)
-        {Tehran, Iran} % Location
-        {
-            \begin{cvitemsfree} % Description(s) of tasks/responsibilities
-                \item{Skills: Computational Fluid Dynamics (CFD) using ANSYS Fluent, SpaceClaim, and ICEM.}
-                %---------------------------------------------------------
-                \item{CFD Simulation of a pilot-scale Bubble column reactor: Hydrodynamics, Temperature, and Concentration}
-                    % \SubItemN{Collaborated research to numerically simulate a pilot-scale bubble column reactor}
-                    % \SubItemN{Simulation results were compared with real data to inform manufacturing decisions}
-                    % \medskip
-                %---------------------------------------------------------
-                \item{Study of Process Parameters on Crystal Size Distribution and Crystallization Hydrodynamics}
-                    % \SubItemN{Attempted a coupled Computational Fluid Dynamics (CFD) and Population Balance Equation (PBE) approach to investigate the impact of process parameters on Crystal Size Distribution (CSD) and hydrodynamics during the crystallization process in a pilot Draft Tube Baffle (DTB) crystallizer}
-                    % \SubItemN{Used experimental design and data analysis (DOE) to acquire data and validate CFD-PBE simulation results}
-                    % \medskip
-                %---------------------------------------------------------
-                \item{Polymeric composite rheology analysis and characterization}
-                    % \SubItemN{Used experimental design to formulate and characterize the viscosity, strain, and storage modulus of a polymer composite and their interactions}
-                    % \SubItemN{Improved the production process by optimizing the rheological properties of the composite and achieving a low viscosity final composite}
-                %---------------------------------------------------------
-                % \bigskip \medskip
-            \end{cvitemsfree}
-        }
-    %---------------------------------------------------------
+%---------------------------------------------------------
+    \ifdefstring{\solution}{mschem}{
+        \input{resume/experience_chem.tex}
+    }{}
+%---------------------------------------------------------
     % \cventry
     %     {} % Organization
     %     {Finance Investor} % Job title
