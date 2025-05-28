@@ -5,7 +5,16 @@
         "**/.hg": true,
         "**/.DS_Store": true,
         "**/Thumbs.db": true,
-        "**/.idea": true
+        "**/.idea": true,
+        "src/*.aux": true,
+        "src/*.log": true,
+        "src/*.out": true,
+        "src/*.gz": true
     },
-    "hide-files.files": []
+    "hide-files.files": [
+        "src/*.log",
+        "src/*.out",
+        "src/*.gz",
+        "src/*.aux"
+    ]
 }
