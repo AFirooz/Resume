@@ -1,0 +1,42 @@
+% Photo Available options: circle|rectangle,edge/noedge,left/right
+% \photo[rectangle,edge,right]{./examples/profile}
+
+\name{Ali}{Firooz}
+\legalname{Seyed Ali Firooz Abadi}
+
+% --------------------------------------------------------------------------------
+
+%  PHD
+\ifdefstring{\solution}{phd}{
+    \position{Computer Science, PhD{\enskip\cdotp\enskip}Chemical Engineer, MS}
+    }{}
+
+% MS CS or MS Chem
+\ifboolexpr { test {\ifdefstring{\solution}{mscs}} or test {\ifdefstring{\solution}{mschem}} } {
+    \position{Computer Science, MS{\enskip\cdotp\enskip}Chemical Engineer, MS}
+}{}
+
+% --------------------------------------------------------------------------------
+
+\ifdefstring{\resloc}{sc}{
+    \address{State College, PA 16801}
+}{
+    \address{Cambridge, MA 02141}
+}
+
+% --------------------------------------------------------------------------------
+
+\mobile{+1 (803) 662-6908}
+% \email{Ali.Firooz@sc.edu}
+\gmail{Ali.emad649@gmail.com}
+%\homepage{afirooz.github.io}
+\github {AFirooz}
+% \googlescholar{m5BMVpgAAAAJ}{tinyurl.com/scholar-g}
+\linkedin {Ali-Firooz}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \reddit{reddit-id}
+% \medium{madium-id}
+\gc{\textbf{Permanent Resident}}
+\relocate{Open to Relocate}

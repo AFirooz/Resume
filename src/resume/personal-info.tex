@@ -1,9 +1,0 @@
-%  PHD
-\ifdefstring{\solution}{phd}{
-    \position{Computer Science, PhD{\enskip\cdotp\enskip}Chemical Engineer, MS}
-    }{}
-
-% MS CS or MS Chem
-\ifboolexpr { test {\ifdefstring{\solution}{mscs}} or test {\ifdefstring{\solution}{mschem}} } {
-    \position{Computer Science, MS{\enskip\cdotp\enskip}Chemical Engineer, MS}
-}{}
