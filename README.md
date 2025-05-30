@@ -56,6 +56,8 @@ By default, the template uses an A4 paper size (`a4paper`), but you can use a US
 
 ## Acknowledgment
 
-- The original template "Awesome CV LaTeX" have been downloaded from [this GitHub repository](https://github.com/posquit0/Awesome-CV).
-- Template license: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
-- This is a modified version of the original template.
+- This resume template is based on "[Awesome CV LaTeX](https://github.com/posquit0/Awesome-CV)", originally created by `@posquit0`.
+- The **LaTeX template code** (including `.cls`, `.sty`, and `.tex` files for the template structure) in this repository is licensed under the [**LPPL Version 1.3c**](https://latex-project.org/lppl/lppl-1-3c.txt).
+- This is a modified version of the original template, incorporating my content and structural adjustments.
+
+All Rights Reserved.
