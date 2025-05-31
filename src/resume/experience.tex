@@ -10,78 +10,88 @@
 %===============================================================================
 % \cvsubsection{Computer Science and Engineering}
 \begin{cventries}
+
 %---------------------------------------------------------
+
 \cventry
-        {Researcher} 
-        {Prisma Health Cancer Institute} 
-        {Jul 2022 -- Present} 
-        {South Carolina, USA} 
-        {
-            \begin{cvitemsfree}
-                \item{Designed and deployed a normalized MySQL cancer-profiling database with SQLAlchemy ORM; database now exceeds 10,000 curated patient records.}
-                % 
-                \item{Built a modular Python ETL pipeline for parsing, cleaning, and loading clinical patient datasets using Pandas and NumPy, improving processing speed and data reliability.}
-                % 
-                \item{Carried out ML/DL experments to classify patient response across 65 drug combinations. Addressed class imbalance and data misingness, while using a 4-metric evaluation system.}
-                % 
-                \item{Used SHAP for model interpretability, providing actionable insights to clinicians.}
-            \end{cvitemsfree}
-        }
+    {Prisma Health Cancer Institute \hspace{0.1cm} \& \hspace{0.1cm} School of Medicine Greenville}
+    {Researcher}
+    {Jul 2022 -- Present}
+    {Remote}
+    {
+        \begin{cvitemsfree}
+            \item{Designed and deployed a normalized MySQL cancer-profiling database with SQLAlchemy ORM; database now exceeds 10,000 curated patient records.}
+            % 
+            \item{Built a modular Python \textbf{ETL pipeline} for parsing, cleaning, verifying, and loading clinical patient datasets using Pandas and NumPy, improving processing speed and data reliability.}
+            % 
+            \item{Carried out ML/DL experments to classify patient response across 65 drug combinations. Addressed various data anomalies, class imbalance, and data misingness, while using a 4-metric evaluation system.}
+            % 
+            \item{Used XAI (explainable AI) tools (SHAP) providing actionable insights to clinicians.}
+        \end{cvitemsfree}
+    }
+
+\vspace*{0.2cm}
 %---------------------------------------------------------
 
-    \cventry
-        {Graduate Research Assistant} 
-        {University of South Carolina} 
-        {Jan 2022 -- Dec 2024} 
-        {South Carolina, USA} 
-        {
-            \begin{cvitemsfree}
-                \item{Efficiently processed \textbf{over 6.9 billion} mass spectrometry data points from 78 raw instrument files, storing results in MySQL using asynchronous approach to optimize ingestion time.}
-                % 
-                \item{Built deep CNNs and ResNet for binary classification of cancerous tissue using the MS data.}
-                % 
-                \item{Applied data reduction techniques to 77,000+ small molecule descriptors for unsupervised clustering. Built an ML model for retention time prediction.}  % and chemical pattern discovery
-                % 
-                \item{Co-developed TransONet: a ResNet-Transformer-UNet hybrid approch, achieving 93.5\% Dice score for aortic segmentation in CT scans.}
-            \end{cvitemsfree}
-        }
+\cventry
+    {University of South Carolina}
+    {Graduate Research Assistant}
+    {Jan 2022 -- Dec 2024}
+    {Columbia, SC}
+    {
+        \begin{cvitemsfree}
+            \item{Processed \textbf{over 6.9 billion} mass spectrometry data points in parallel from 78 raw instrument files, used async ingestion to store results in MySQL, significantly reducing pipeline latency.}
+            % 
+            \item{Built deep CNNs and ResNet for binary classification of cancerous tissue using the MS data.}
+            % 
+            \item{Co-developed TransONet: a \textbf{ResNet-Transformer-UNet} hybrid approch, achieving 93.5\% Dice score for aortic segmentation in CT scans.}
+        \end{cvitemsfree}
+    }
+
+\vspace*{0.2cm}
+%---------------------------------------------------------
+
+\cventry
+    {}
+    {Selected Projects}
+    {}
+    {}
+    {
+        \begin{cvitemsfree}
+            \item{Applied data reduction techniques to \textbf{77,000+ small molecule descriptors} for unsupervised clustering. Built an ML model for retention time prediction.}  % and chemical pattern discovery
+            %
+            \item{Led 5-member team to build a cloud-native certificate management system using \textbf{Azure} (SQL DB, Service Bus, Logic Apps, Functions, Data Factory) and \textbf{Azure DevOps.} Used .NET Core 7, EF Core, and React; integrated CI/CD and serverless architecture.}
+            % 
+            \item{prototyped a RAG-based chatbot for USC Hackathon using \textbf{LangChain,} LangSmith, and \textbf{MongoDB} Atlas Vector DB.}
+            % 
+            \item{Implemented and modularized RAG-based agent for question answering over research paper datasets, covering prompt versioning, document reasoning, vector stores, and semantic similarity via embeddings.}
+            % 
+            \item{Designed and deployed a \textbf{Hybrid GraphRAG Agent} using \textbf{LangGraph,} LangSmith, Neo4j, and vision LLMs. Extracted structured data from PDFs (graphs/tables/images) using VLM; implemented advanced \textbf{semantic similarity chunking} and document ingestion with progress tracking.}
+            % 
+            \item{Developed and deployed a \textbf{semantic segmentation} model on \textbf{AWS SageMaker,} trained to segment images into foreground, background, and transition classes.}
+            % 
+            % \item{Completed a project-based PyTorch course focused on computer vision. Implemented binary and multi-class classification, object detection with bounding boxes, and semantic/instance/panoptic segmentation. Developed GANs for image synthesis and evaluated model performance.}
+            % 
+            % \item{Studied the lifecycle of LLMs in a course on Generative AI, covering architecture, fine-tuning, evaluation metrics, and deployment. Applied scaling laws and constraint-aware optimization strategies in LLM projects.}
+            % 
+            % \item{Attended a 5-day Gen AI intensive program by Google covering: foundational models and prompt engineering, embeddings and vector search, generative agents, domain-specific LLMs (e.g., Med-PaLM), and MLOps for generative AI. Hands-on coding throughout using Gemini and Vertex AI.}
+            % 
+            % \item{Implemented Vision Transformer (ViT) models in PyTorch Lightning for image classification tasks.}
+            % 
+            % \item{Fine-tuned Hugging Face ALBERT on TripAdvisor sentiment analysis; handled tokenization, training, and evaluation.}
+        \end{cvitemsfree}
+    }
+
+\vspace*{0.2cm}
+%---------------------------------------------------------
+
+\ifdefstring{\solution}{mschem}{
+    \input{resume/experience-chem.tex}
+}{}
 
 %---------------------------------------------------------
 
-    \cventry
-        {Selected Projects} 
-        {University of South Carolina} 
-        {} 
-        {} 
-        {
-            \begin{cvitemsfree}
-                \item{Led 5-member team to build a cloud-native certificate management system using Azure (SQL, Service Bus, Logic Apps, Functions, Data Factory) and Azure DevOps. Used .NET Core 7, EF Core, and React; integrated CI/CD and serverless architecture.}
-                % 
-                \item{prototyped a RAG-based chatbot for USC Hackathon using LangChain, LangSmith, and MongoDB Atlas Vector DB.}
-                % 
-                \item{Implemented and modularized RAG-based agent for question answering over research paper datasets, covering prompt versioning, document reasoning, vector stores, and semantic similarity via embeddings.}
-                % 
-                \item{Designed and deployed a Hybrid GraphRAG Agent using LangGraph, LangSmith, Neo4j, and vision LLMs. Extracted structured data from PDFs (graphs/tables/images) using PyMuPDF4LLM; implemented advanced semantic chunking and document ingestion with progress tracking.}
-                % 
-                \item{Developed and deployed a semantic segmentation model on AWS SageMaker, trained to segment images into foreground, background, and transition classes.}
-                % 
-                \item{Completed a project-based PyTorch course focused on computer vision. Implemented binary and multi-class classification, object detection with bounding boxes, and semantic/instance/panoptic segmentation. Developed GANs for image synthesis and evaluated model performance.}
-                % 
-                \item{Studied the lifecycle of LLMs in a course on Generative AI, covering architecture, fine-tuning, evaluation metrics, and deployment. Applied scaling laws and constraint-aware optimization strategies in LLM projects.}
-                % 
-                \item{Attended a 5-day Gen AI intensive program by Google covering: foundational models and prompt engineering, embeddings and vector search, generative agents, domain-specific LLMs (e.g., Med-PaLM), and MLOps for generative AI. Hands-on coding throughout using Gemini and Vertex AI.}
-                % 
-                \item{Implemented Vision Transformer (ViT) models in PyTorch Lightning for image classification tasks.}
-                % 
-                \item{Fine-tuned Hugging Face ALBERT on TripAdvisor sentiment analysis; handled tokenization, training, and evaluation.}
-            \end{cvitemsfree}
-        }
-%---------------------------------------------------------
-    \ifdefstring{\solution}{mschem}{
-        \input{resume/experience-chem.tex}
-    }{}
-%---------------------------------------------------------
-    % \cventry
+% \cventry
     % {Finance Investor} % Job title
     % {} % Organization
     % {2015 - 2020} % Date(s)
@@ -90,5 +100,6 @@
     %     \SubItem{\vspace{-0.4cm}Experienced a 150\% growth rate, in 5 years, as a result of utilizing money management techniques and applying both fundamental and technical analysis to Iranian stocks.
     %     }
     % }
+
 %---------------------------------------------------------
 \end{cventries}
