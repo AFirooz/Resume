@@ -8,10 +8,10 @@
 \input{resume/main/general_config.tex}
 
 % highlights color
-\colorlet{awesome}{awesome-darknight}
+\colorlet{awesome}{awesome-red}  % darknight
 
 % highlight section with awesome color
-\setbool{acvSectionColorHighlight}{false}  % true or false
+\setbool{acvSectionColorHighlight}{true}  % true or false
 
 % text colors
 \definecolor{darktext}{HTML}{414141}
@@ -25,7 +25,7 @@
 \def\solution{mscs}
 
 % Options: sc, ma
-\def\resloc{ma}
+\def\resloc{sc}
 
 %-------------------------------------------------------------------------------
 %	PERSONAL INFORMATION
@@ -43,18 +43,32 @@
 %-------------------------------------------------------------------------------
 
 \RaggedRight
-\vspace*{-0.3cm}
+
+% \vspace*{-0.2cm}
 \input{resume/summary.tex}
-\input{resume/skills.tex} \vspace*{-0.2cm}
+\vspace*{0.2cm}
+
+\input{resume/skills.tex}
+\vspace*{-0.6cm}
+
 \input{resume/experience.tex}
-\input{resume/education.tex} \vspace{-0.6cm}
+\vspace*{0.1cm}
+
 % Self-initiated, academic efforts, or as part of a course
-\input{resume/projects.tex} \vspace{-0.1cm}
-\input{resume/honors.tex} \vspace{-0.1cm}
-\input{resume/certificates.tex}
-\input{resume/publications.tex}
-%\Centering
+% \input{resume/projects.tex}
+%\vspace{-0.1cm}
+
+\input{resume/education.tex}
+\vspace{-0.6cm}
+
 \input{resume/leadership.tex}
+
+\input{resume/publications.tex}
+
+\input{resume/honors.tex}
+\vspace{-0.1cm}
+
+\input{resume/certificates.tex}
 
 %-------------------------------------------------------------------------------
 \end{document}
