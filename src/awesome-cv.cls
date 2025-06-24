@@ -90,6 +90,8 @@
 }
 % Needed to calculate \Widthof{}
 \usepackage{calc}
+% optimize the build process
+\usepackage{bookmark}
 
 %-------------------------------------------------------------------------------
 %                Custom User-Defined Commands
